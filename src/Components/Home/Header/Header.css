@@ -1,0 +1,17 @@
+.header-container {
+  height:855px;
+  /* width: 500px; */
+  position:relative; 
+  background-image: url("../../../images/ChairBg.png");
+  background-size: cover;
+}
+.header-container::after {
+  height:755px;
+  content:' ';
+  position: absolute;
+  top: 0;
+  width: 27%;
+  right: 0;
+  background-color: #3A4256;
+  z-index: -50;
+}
