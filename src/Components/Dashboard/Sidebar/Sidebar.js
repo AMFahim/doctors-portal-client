@@ -6,6 +6,7 @@ import DateRangeIcon from '@material-ui/icons/DateRange';
 import DescriptionIcon from '@material-ui/icons/Description';
 import SettingsIcon from '@material-ui/icons/Settings';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
 
 const Sidebar = () => {
   const removeUnderline = {
@@ -17,13 +18,16 @@ const Sidebar = () => {
        <Link to="/dashboard/appointment" style={removeUnderline} className="text-light"><DashboardIcon/> Dashboard</Link>
       </div>
       <div className="pt-4">
-       <Link to="/" style={removeUnderline} className="text-light"><DateRangeIcon/> Appointment</Link>
+       <Link to="/appointment" style={removeUnderline} className="text-light"><DateRangeIcon/> Appointment</Link>
       </div>
       <div className="pt-4">
        <Link to="/dashboard/patients" style={removeUnderline} className="text-light"><PeopleIcon/> Patients</Link>
       </div>
       <div className="pt-4">
        <Link to="/" style={removeUnderline} className="text-light"><DescriptionIcon/> Prescription</Link>
+      </div>
+      <div className="pt-4">
+       <Link to="/dashboard/addDoctor" style={removeUnderline} className="text-light"><PersonAddIcon/> Add Doctor</Link>
       </div>
       <div className="pt-4">
        <Link to="/" style={removeUnderline} className="text-light"><SettingsIcon/> Setting</Link>
