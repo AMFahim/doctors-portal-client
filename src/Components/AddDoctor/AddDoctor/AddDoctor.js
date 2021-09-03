@@ -14,7 +14,8 @@ const AddDoctor = () => {
   }
 
   const handleFileChange = e =>{
-    const newFile = e.target.value[0];
+    const newFile = e.target.files[0];
+    console.log(newFile)
     setFile(newFile)
   }
 
