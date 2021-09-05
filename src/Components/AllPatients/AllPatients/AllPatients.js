@@ -6,8 +6,8 @@ const AllPatients = () => {
 
     useEffect(() => {
         fetch('http://localhost:5000/appointments')
-            .then(res => res.json())
-            .then(data => setAppointments(data))
+        .then(res => res.json())
+        .then(data => setAppointments(data))
     }, [])
 
     return (
@@ -15,7 +15,7 @@ const AllPatients = () => {
             <Sidebar></Sidebar>
             <div className="col-md-10 p-4 pr-5" style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}>
                 <h5 className="text-brand">All Patients</h5>
-                <AppointmentDataTable appointments={appointments} />
+                <AppointmentDataTable key={appointments._id} appointments={appointments} />
             </div>
         </div>
     );

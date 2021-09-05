@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 
 const AppointmentDataTable = ({ appointments }) => {
+  console.log(appointments)
   return (
     <div className="row">
       <div className="col-md-2">
